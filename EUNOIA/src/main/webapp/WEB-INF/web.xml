@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>events</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+     <servlet>
+    <description></description>
+    <servlet-name>Bookings</servlet-name>
+    <servlet-class>events.BookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Bookings</servlet-name>
+    <url-pattern>/Book</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    
+  
+     <servlet>
+    <description></description>
+    <servlet-name>addstaff</servlet-name>
+    <servlet-class>events.AddStaff</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addstaff</servlet-name>
+    <url-pattern>/AddStaff</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+     <servlet>
+    <description></description>
+    <servlet-name>addcustomers</servlet-name>
+    <servlet-class>events.AddCustomer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addcustomers</servlet-name>
+    <url-pattern>/AddCustomer</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+       <servlet>
+    <description></description>
+    <servlet-name>login</servlet-name>
+    <servlet-class>events.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/LogIn</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <description></description>
+    <servlet-name>Events</servlet-name>
+    <servlet-class>events.EventsServlets</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Events</servlet-name>
+    <url-pattern>/ViewEvents</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>Staff</servlet-name>
+    <servlet-class>events.StaffServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Staff</servlet-name>
+    <url-pattern>/ViewStaff</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <description></description>
+    <servlet-name>Customers</servlet-name>
+    <servlet-class>events.CustomerServlets</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Customers</servlet-name>
+    <url-pattern>/ViewCustomers</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
